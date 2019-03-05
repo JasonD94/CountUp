@@ -110,17 +110,13 @@ function countUpFromTime(countUp, id) {
 		$("#timeRefSeconds").text("");
 	}
 	
-	// Easter Egg at 1 Year mark
-	if (timeFrom <= 0) {
-		clearTimeout(id);
+	// Easter Egg at 1+ Year mark
+	if (years >= 1) {
 		
-		// Change title of page / above count up to name of epic video
-		document.title = "HAPPIER"
-		$("#countUpTitle").text("HAPPIER");
 		$("#countUpTitle").addClass("font-weight-bold font-italic");
 		
-		// Clear the count up div and replace it with an epic video
-		$(countUpDiv).load("countUpDone.html");
+		// Load a funny gif
+		$("#itshappening").load("CountUpMark.html");
 	}
 	else {
 		clearTimeout(countUpFromTime.interval);
