@@ -1,0 +1,49 @@
+<!--
+		Count Up from a date. Set the date when calling "countUpFromTime", and watch the counter count up up up.
+		
+		Based on the CountDown code but just one tweak to calculating the time difference. :]
+		https://github.com/JasonD94/CountDown
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+		  crossorigin="anonymous">
+
+    <title>Count Up</title>
+  </head>
+  <body>
+        <h1 class="text-center" id="countDownTitle">Count Up: </h1>
+        <div class="container-fluid text-center countup display-4" id="countUpDiv">
+            <span id="years">0</span>
+            <span id="timeRefYears">years</span>
+            <span id="days">0</span>
+            <span id="timeRefDays">days</span>
+            <span id="hours">0</span>
+            <span id="timeRefHours">hours</span>
+            <span id="minutes">0</span>
+            <span id="timeRefMinutes">minutes</span>
+            <span id="seconds">0</span>
+            <span id="timeRefSeconds">seconds</span>
+        </div>
+		<div class="container-fluid text-center countup display-4" id="countUpDiv">
+			
+		</div>
+        <div class="container-fluid text-center">
+			<div id="itshappening"></div>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!--- JavaScript functions for counting up from a date -->
+    <script src="CountUp.js"></script>
+  </body>
+</html>
