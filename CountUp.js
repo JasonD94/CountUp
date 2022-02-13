@@ -8,7 +8,9 @@ window.onload = function() {
 	// or (year, monthIndex, day, hours, minutes, seconds). Reference:
 	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 	// https://www.epochconverter.com/
-	countUpFromTime(new Date(1566216000000), 'countUpDiv');
+  // Example: Tuesday, October 12, 2021 8:00:00 AM == 1634025600000
+  //           Monday,  August 19, 2019 8:00:00 AM == 1566216000000
+	countUpFromTime(new Date(1634025600000), 'countUpDiv');
 };
 
 function countUpFromTime(countUp, id) {
